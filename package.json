@@ -1,0 +1,132 @@
+{
+  "name": "green_earth",
+  "version": "0.1.0",
+  "description": "blue ocean capstone project",
+  "main": "index.js",
+  "dependencies": {
+    "@babel/cli": "^7.20.7",
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.19.3",
+    "@babel/preset-react": "^7.18.6",
+    "@react-google-maps/api": "^2.18.1",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@trendyol-js/react-carousel": "^3.0.0",
+    "axios": "^1.2.3",
+    "babel-loader": "^8.2.3",
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.20.0",
+    "bootstrap": "^5.2.3",
+    "cloudinary-react": "^1.8.1",
+    "compression": "^1.7.4",
+    "cookie-parse": "^0.4.0",
+    "cookie-parser": "^1.4.6",
+    "css-loader": "^6.5.1",
+    "date-fns": "^2.29.3",
+    "date-fns-tz": "^2.0.0",
+    "dotenv": "^10.0.0",
+    "dotenv-expand": "^5.1.0",
+    "dotenv-webpack": "^8.0.1",
+    "eslint": "^8.3.0",
+    "eslint-config-react-app": "^7.0.1",
+    "eslint-webpack-plugin": "^3.1.1",
+    "express": "^4.18.1",
+    "html-webpack-plugin": "^5.5.0",
+    "jest": "^27.4.3",
+    "jest-environment-jsdom": "^29.1.2",
+    "jest-puppeteer": "^6.1.1",
+    "jest-resolve": "^27.4.2",
+    "jest-watch-typeahead": "^1.0.0",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^6.7.5",
+    "msw": "^0.47.4",
+    "nodemailer": "^6.9.1",
+    "nodemon": "^2.0.20",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-loader": "^6.2.1",
+    "postcss-normalize": "^10.0.1",
+    "postcss-preset-env": "^7.0.1",
+    "prompts": "^2.4.2",
+    "puppeteer": "^18.2.1",
+    "react": "^18.2.0",
+    "react-app-polyfill": "^3.0.0",
+    "react-bootstrap": "^2.7.0",
+    "react-datepicker": "^4.10.0",
+    "react-datetime": "^3.2.0",
+    "react-dev-utils": "^12.0.1",
+    "react-dom": "^18.2.0",
+    "react-google-autocomplete": "^2.7.2",
+    "react-icons": "^4.7.1",
+    "react-ios-time-picker": "^0.2.2",
+    "react-loader-spinner": "^5.3.4",
+    "react-moment": "^1.1.3",
+    "react-ratings-declarative": "^3.4.1",
+    "react-refresh": "^0.11.0",
+    "react-router-dom": "^6.7.0",
+    "react-test-renderer": "^18.2.0",
+    "react-time-picker": "^5.2.0",
+    "resolve": "^1.20.0",
+    "resolve-url-loader": "^4.0.0",
+    "sass-loader": "^12.3.0",
+    "spdy": "^4.0.2",
+    "style-loader": "^3.3.1",
+    "tailwindcss": "^3.0.2",
+    "terser-webpack-plugin": "^5.3.6",
+    "universal-cookie": "^4.0.4",
+    "util": "^0.12.5",
+    "web-vitals": "^2.1.4",
+    "webpack": "^5.64.4",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.6.0",
+    "webpack-manifest-plugin": "^4.0.2",
+    "workbox-webpack-plugin": "^6.4.1"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.[t|j]sx?$": "babel-jest"
+    },
+    "moduleNameMapper": {
+      "axios": "axios/dist/node/axios.cjs"
+    }
+  },
+  "scripts": {
+    "clear_jest": "jest --clearCache",
+    "start": "webpack --mode=production --node-env=production && node ./server/index.js",
+    "start:dev": "nodemon ./server/index.js",
+    "build:dev": "webpack --mode=development --watch",
+    "build:prod": "webpack --mode=production --node-env=production",
+    "watch": "webpack --watch & nodemon ./server/index.js",
+    "test": "jest ./ecodrive.test.js --coverage --forceExit",
+    "test:rr": "jest ./client/src/components/RatingsReviews/rr.test.js --coverage",
+    "react-babel": "babel client/src --out-dir client/compiled --presets=@babel/preset-react --source-maps inline --watch"
+  },
+  "engines": {
+    "node": ">=16.0.0 <17.0.0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "authors": "Becca, Blake, Brandon, Cameron, Chelsea, Huan, Nick",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.12",
+    "@babel/preset-env": "^7.20.2",
+    "babel-jest": "^29.4.2",
+    "supertest": "^6.3.3"
+  }
+}
